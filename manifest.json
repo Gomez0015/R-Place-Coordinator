@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+
+    "name": "Coordinated",
+    "description": "Wrong color dude! You ruined my xqc winston!",
+    "version": "0.2",
+    "permissions": [
+        "activeTab",
+        "cookies"
+    ],
+    "host_permissions": [
+        "https://hot-potato.reddit.com/*"
+    ],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["extScripts/contentscript.js"],
+        "all_frames": true
+    }],
+    "action": {
+        "default_popup": "index.html"
+    }
+}
